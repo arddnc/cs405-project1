@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS405 Project 1 — Kavunlu Natürmort</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #111214; color: #e8e6e1; font: 13px/1.4 system-ui, "Segoe UI", sans-serif; overflow: hidden; }
+    #gfx { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; touch-action: none; }
+    .panel { position: fixed; background: rgba(17, 18, 20, 0.82); border: 1px solid #34363c; border-radius: 6px; padding: 8px 10px; pointer-events: none; }
+    .panel pre { margin: 0; font: 11.5px/1.35 "JetBrains Mono", Menlo, Consolas, monospace; white-space: pre; }
+    .panel h4 { margin: 0 0 3px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #f07a4a; }
+    #stats { left: 10px; top: 10px; }
+    #info { left: 10px; top: 92px; max-height: calc(100vh - 150px); overflow: hidden; }
+    #help { left: 10px; bottom: 10px; color: #b9b5ad; font-size: 12px; }
+    .label { position: fixed; padding: 2px 7px; border-radius: 3px; background: rgba(0,0,0,.55); font-size: 12px; font-weight: 600; pointer-events: none; }
+    #error { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(10,10,12,.92); z-index: 100; }
+    #error div { max-width: 760px; background: #1a1b1f; border: 1px solid #f07a4a; border-radius: 8px; padding: 20px 24px; }
+    #error h3 { margin: 0 0 8px; color: #f07a4a; }
+    #error pre { white-space: pre-wrap; font: 12px/1.4 Menlo, Consolas, monospace; color: #ddd; }
+    .hl { color: #ffd54a; }
+  </style>
+</head>
+<body>
+  <canvas id="gfx"></canvas>
+  <div id="stats" class="panel"><pre id="statsText"></pre></div>
+  <div id="info" class="panel"><pre id="infoText"></pre></div>
+  <div id="help" class="panel">
+    Drag on the main view: orbit · wheel: zoom · drag a round/square point: move curve control point<br>
+    Keys: 1 split · 2 main · 3 inspection · P perspective/ortho · X node axes · I info panel · R reset · Space play/pause follower
+  </div>
+  <div id="labelMain" class="label">main camera</div>
+  <div id="labelInsp" class="label">inspection camera (fixed)</div>
+  <div id="error"><div><h3>Cannot run</h3><pre id="errorText"></pre></div></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

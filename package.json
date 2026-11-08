@@ -1,0 +1,18 @@
+{
+  "name": "cs405-project1",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test src/math/tests/vec3.test.js src/math/tests/mat4.test.js src/math/tests/camera.test.js src/math/tests/curves.test.js"
+  },
+  "dependencies": {
+    "lil-gui": "^0.19.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}
