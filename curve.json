@@ -1,0 +1,91 @@
+{
+  "painting": {
+    "artist": "Şeker Ahmed Paşa",
+    "title": "Kavunlu Natürmort",
+    "collection": "Sakıp Sabancı Museum"
+  },
+  "shape": "lower rim of the cut melon slice",
+  "coordinates": "normalised painting coordinates: x right, y up, (0,0) = bottom-left, (1,1) = top-right",
+  "type": "piecewise cubic Bezier (C1)",
+  "segments": 3,
+  "controlPoints": [
+    {
+      "index": 0,
+      "role": "knot",
+      "x": 0.17027,
+      "y": 0.37916
+    },
+    {
+      "index": 1,
+      "role": "handle",
+      "x": 0.1911,
+      "y": 0.31143
+    },
+    {
+      "index": 2,
+      "role": "handle",
+      "x": 0.27986,
+      "y": 0.20668
+    },
+    {
+      "index": 3,
+      "role": "knot",
+      "x": 0.3436,
+      "y": 0.18696
+    },
+    {
+      "index": 4,
+      "role": "handle",
+      "x": 0.40735,
+      "y": 0.16723
+    },
+    {
+      "index": 5,
+      "role": "handle",
+      "x": 0.65732,
+      "y": 0.20242
+    },
+    {
+      "index": 6,
+      "role": "knot",
+      "x": 0.68803,
+      "y": 0.2172
+    },
+    {
+      "index": 7,
+      "role": "handle",
+      "x": 0.71873,
+      "y": 0.23198
+    },
+    {
+      "index": 8,
+      "role": "handle",
+      "x": 0.80605,
+      "y": 0.29908
+    },
+    {
+      "index": 9,
+      "role": "knot",
+      "x": 0.85122,
+      "y": 0.35123
+    }
+  ],
+  "knots": [
+    {
+      "x": 0.17027,
+      "y": 0.37916
+    },
+    {
+      "x": 0.3436,
+      "y": 0.18696
+    },
+    {
+      "x": 0.68803,
+      "y": 0.2172
+    },
+    {
+      "x": 0.85122,
+      "y": 0.35123
+    }
+  ]
+}
